@@ -161,7 +161,7 @@ formHumor.addEventListener("submit", async (e) => {
         });
 
         if (resposta.ok) {
-            showMessage("✅ Salvo no no Google Sheets!", false);
+            showMessage("✅ Salvo no Na Nuvem!", false);
             formHumor.reset(); // Limpa o formulário apenas após o sucesso
             document.querySelectorAll('.emoji-label').forEach(l=>l.classList.remove('selected'));
         } else {
@@ -255,3 +255,4 @@ document.querySelectorAll('input[name="humor"]').forEach(input => {
 loadRecords(); 
 renderizarTabela(); 
 applyAdminUI(isAdmin()); // Verifica se já está logado no início
+
